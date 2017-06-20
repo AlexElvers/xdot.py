@@ -123,7 +123,6 @@ class DotWidget(Gtk.DrawingArea):
         return xdotcode
 
     def set_dotcode(self, dotcode, filename=None):
-        self.openfilename = None
         if isinstance(dotcode, str):
             dotcode = dotcode.encode('utf-8')
         xdotcode = self.run_filter(dotcode)
